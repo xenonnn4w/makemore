@@ -1,0 +1,64 @@
+# makemore part 3 - deep MLP diagnostics
+# n_embed=10 n_hidden=100 layers=11 params=46497 steps=1000 debug=True
+# losses: train=2.3630 dev=2.3696 test=2.3682
+
+activation distribution (Tanh outputs)
+  layer 1 (      Tanh): mean -0.05, std 0.76, saturated: 21.53%
+  layer 3 (      Tanh): mean -0.00, std 0.72, saturated: 11.28%
+  layer 5 (      Tanh): mean +0.01, std 0.74, saturated: 13.00%
+  layer 7 (      Tanh): mean -0.05, std 0.74, saturated: 13.81%
+  layer 9 (      Tanh): mean -0.01, std 0.72, saturated: 11.78%
+  wrote activations.svg
+
+gradient distribution (Tanh outputs)
+  layer 1 (      Tanh): mean +0.000118, std 2.821389e-03
+  layer 3 (      Tanh): mean +0.000031, std 2.824831e-03
+  layer 5 (      Tanh): mean -0.000019, std 2.824328e-03
+  layer 7 (      Tanh): mean -0.000108, std 2.821951e-03
+  layer 9 (      Tanh): mean +0.000070, std 2.262639e-03
+  wrote gradients.svg
+
+weight gradient distribution
+  weight   (27, 10) | mean +0.001160 | std 1.115501e-02 | grad:data ratio 1.115439e-02
+  weight  (30, 100) | mean -0.000190 | std 8.714272e-03 | grad:data ratio 2.786436e-02
+  weight (100, 100) | mean -0.000086 | std 7.232300e-03 | grad:data ratio 4.302935e-02
+  weight (100, 100) | mean +0.000009 | std 6.865450e-03 | grad:data ratio 4.049633e-02
+  weight (100, 100) | mean -0.000029 | std 6.951797e-03 | grad:data ratio 4.118749e-02
+  weight (100, 100) | mean -0.000088 | std 6.168605e-03 | grad:data ratio 3.664631e-02
+  weight  (100, 27) | mean -0.000000 | std 2.263843e-02 | grad:data ratio 3.205105e-01
+  wrote weight_gradients.svg
+
+update-to-data ratios (log10, target ~ -3)
+  param 0   (27, 10) | final ratio -2.95
+  param 1  (30, 100) | final ratio -2.55
+  param 3 (100, 100) | final ratio -2.37
+  param 5 (100, 100) | final ratio -2.39
+  param 7 (100, 100) | final ratio -2.39
+  param 9 (100, 100) | final ratio -2.44
+  param 11  (100, 27) | final ratio -1.49
+  wrote update_ratios.svg
+
+training loss
+  wrote loss_curve.svg
+
+20 sampled names
+  carplie.
+  arlilli.
+  kimrix.
+  taty.
+  sacassie.
+  rahnen.
+  den.
+  art.
+  kaqhi.
+  neroniahceriiv.
+  kaleigy.
+  ham.
+  prin.
+  quintes.
+  lin.
+  arian.
+  quisothogiearyrix.
+  kaeelins.
+  bred.
+  edoia.
