@@ -1,0 +1,10 @@
+# makemore bigram (count-based) - 7 sampled names
+# words=32033 bigrams=228146 smoothing=+1 seed=2147483647
+# average negative log likelihood: 2.4546
+cexze.
+momasurailezitynn.
+konimittain.
+llayn.
+ka.
+da.
+staiyaubrtthrigotai.
