@@ -1,0 +1,23 @@
+# makemore part 5 - hierarchical Wavenet-style character model
+# block_size=8 embedding_dim=10 hidden=200 steps=10
+# losses: train=3.0420 dev=3.0442 test=3.0416
+
+activation distribution (Tanh outputs)
+  layer  4: mean +0.00, std 0.54, saturated 6.89%
+  layer  8: mean +0.01, std 0.56, saturated 6.13%
+  layer 12: mean +0.00, std 0.62, saturated 3.75%
+  wrote activations.svg
+
+gradient distribution (Tanh outputs)
+  layer  4: mean +1.00e-13, std 4.57e-04
+  layer  8: mean -3.14e-13, std 3.97e-04
+  layer 12: mean -1.05e-05, std 4.00e-04
+  wrote gradients.svg
+
+training loss
+  wrote loss_curve.svg
+
+3 sampled names
+carpzhxqtb.
+hqvkfkwmrpxqthty.
+hkcasskejrzhnbnfqpl.
